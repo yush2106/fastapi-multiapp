@@ -19,7 +19,7 @@ pip install gunicorn  #install Gunicorn
 </pre>
 
 ## Usage
-Gunicorn is a web server, use this commad to start the UvicornWorker to serve FastAPI.
+Gunicorn is a web server, use this commad to start the UvicornWorker to serve FastAPI on a Linux Ubuntu.
 
 <pre lang="bash">
 gunicorn main:main_app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:8000
