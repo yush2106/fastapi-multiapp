@@ -12,7 +12,7 @@ In this resposity, use a main API to mount multi-apps from different paths.
 
 ## Installation
 
-<pre lang="python">
+<pre lang="bash">
 pip install fastapi  #install FastAPI
 pip install uvicorn  #install Uvicorn
 pip install gunicorn  #install Gunicorn
@@ -25,6 +25,6 @@ pip install gunicorn  #install Gunicorn
 
 `-b` bind address and port
 
-<pre lang="python">
+<pre lang="bash">
 gunicorn main:main_app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:8000
 </pre>
