@@ -19,12 +19,14 @@ pip install gunicorn  #install Gunicorn
 </pre>
 
 ## Usage
+Gunicorn is a web server, use this commad to start the UvicornWorker to serve FastAPI.
+
+<pre lang="bash">
+gunicorn main:main_app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:8000
+</pre>
+
 `-k` worker type
 
 `-w` number of worker processes
 
 `-b` bind address and port
-
-<pre lang="bash">
-gunicorn main:main_app -k uvicorn.workers.UvicornWorker -w 4 -b 0.0.0.0:8000
-</pre>
